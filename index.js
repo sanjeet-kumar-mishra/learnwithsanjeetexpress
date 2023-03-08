@@ -3,6 +3,7 @@ const app = express()
 const port = 8000
 const path = require('path')
 const manpowercalc = require('./Routers/manpowercalc')
+const employeedetails = require('./Routers/emplpoyeedetails')
 
 app.use(express.json())
 
@@ -14,6 +15,7 @@ app.get('*', (req, res) =>{
 
 //Routers Section
 app.use('/services/manpowercalc', manpowercalc)
+app.use('/services/employeedetails', employeedetails)
 
 
 app.listen(port, () =>{
