@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient
 
-DBurl = "mongodb+srv://sanjityaya:Sanjeet111@cluster0.gbw3x.mongodb.net/EmployeeData?retryWrites=true&w=majority"
+DBurl = "mongodb+srv://*******:*********@cluster0.gbw3x.mongodb.net/EmployeeData?retryWrites=true&w=majority"
 
 
 const client = new MongoClient(DBurl, {
